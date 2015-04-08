@@ -33,6 +33,10 @@
       <!-- End second dropdown menu -->
 
         <a href='delivery' type="button" class="btn btn-default">Delivery</a>
+
+        <% if logged_in? %>
+          <%= link_to "New Appointment", new_appointment_path, :class => 'btn btn-default' %>
+        <% end %>
     </div>
   </div>
 

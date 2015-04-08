@@ -39,6 +39,10 @@ zoom:1;
   <div class='row'>
     <%= render "layouts/navigation" %>
     <div class="col-md-6 col-md-offset-1">
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%=message_type %>"><%= message %></div>
+      <% end %>
+
       <%= yield %>
     </div>
   </div>

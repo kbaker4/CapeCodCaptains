@@ -42,6 +42,8 @@ gem 'bootstrap-sass'
 
 gem 'friendly_id'
 
+gem 'bcrypt'
+
 group :test, :development do 
 	gem "minitest"
 	gem "rspec-rails", "2.13.1"

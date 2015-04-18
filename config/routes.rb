@@ -8,8 +8,8 @@ Rails.application.routes.draw do
   root "pages#index"
 
   get '/gallery' => 'pages#gallery'
-  get '/learn_in_the_classroom' => 'pages#learn_in_the_classroom'
-  get '/learn_in_the_field' => 'pages#learn_in_the_field'
+  get '/classroom' => 'pages#classroom'
+  get '/on_boat' => 'pages#on_boat'
   get '/delivery' => 'pages#delivery'
   get '/prepurchase' => 'pages#prepurchase'
   get '/decommissioning' => 'pages#decommissioning'

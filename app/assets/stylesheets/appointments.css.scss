@@ -6,42 +6,11 @@
 
 $background-main: #E0F3FF;
 
-body {
-	background-color: $background-main
+.navbar-brand {
+	float: none;
 }
 
-/*.navbar {
-	height:30px;
-	min-height: 30px;
+.navbar-center {
+    position: absolute;
 
-	.navbar-brand {
-		padding: 3px;
-	}
-}*/
-
-.navbar .nav,
-.navbar .nav > li {
-  float:none;
-  display:inline-block;
-  *display:inline; /* ie7 fix */
-  *zoom:1; /* hasLayout ie7 trigger */
-  vertical-align: top;
-}
-
-.navbar-inner {
-  text-align:center;
-}
-
-.jumbotron {
-	text-align: center;
-	height: 260px;
-	padding-top: 60px;
-
-	li {
-		display: inline-block;
-	}
-
-	.middle {
-		padding-top: 20px;
-	}
 }

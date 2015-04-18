@@ -1,43 +1,46 @@
-
-  <div class="col-sm-3 col-md-2 sidebar">
-    <div class="btn-group-vertical" role="group" aria-label="...">    
-        <a href='/' type="button" class="btn btn-default">Home</a>
-        <a href='gallery' type="button" class="btn btn-default">Gallery</a>
-      
-<!-- First Dropdown menu -->
-      <div class="btn-group" role="group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          Instruction
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="learn_in_the_classroom">Classes</a></li>
-          <li><a href="learn_in_the_field">On Your Boat</a></li>
-          <li><a href="#">Schedule</a></li>
-        </ul>
-      </div>
-<!-- End first dropdown menu -->
-
-<!-- Second Dropdown menu -->
-      <div class="btn-group" role="group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-          Inspection
-          <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" role="menu">
-          <li><a href="prepurchase">Prepurchase</a></li>
-          <li><a href="decommissioning">Decommissioning</a></li>
-          <li><a href="recommissioning">Recommissioning</a></li>
-        </ul>
-      </div>
-      <!-- End second dropdown menu -->
-
-        <a href='delivery' type="button" class="btn btn-default">Delivery</a>
-
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-left navbar-brand" href="#"><a class="navbar-brand">Brand</a></div>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Gallery", gallery_path %></li>
+        <li><%= link_to "Delivery", delivery_path %></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Instruction<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "Classroom", classroom_path %></li>
+            <li><%= link_to "On Your Boat", on_boat_path %></li>         
+          </ul> 
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Inspection<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><%= link_to "Prepurchase", prepurchase_path %></li>
+            <li><%= link_to "Decommissioning", decommissioning_path %></li>
+            <li><%= link_to "Recommissioning", recommissioning_path %></li>       
+          </ul> 
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
         <% if logged_in? %>
-          <%= link_to "New Appointment", new_appointment_path, :class => 'btn btn-default' %>
-        <% end %>
+              <l1><%= link_to "Sign Out", logout_path, method: :delete %></li>
+            <% else %>
+              <li><%= link_to "Sign In", login_path %></li>
+              <li><%= link_to "Sign Up", login_path %></li>
+            <% end %>
+      </ul>
     </div>
   </div>
+</nav>
+  
 
-
+  

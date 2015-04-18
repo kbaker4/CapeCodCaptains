@@ -14,3 +14,9 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+jQuery('#datetimepicker3').datetimepicker({
+  format:'d.m.Y H:i',
+  inline:true,
+  lang:'ru'
+});

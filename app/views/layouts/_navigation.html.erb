@@ -29,14 +29,17 @@
             <li><%= link_to "Recommissioning", recommissioning_path %></li>       
           </ul> 
         </li>
+        <% if logged_in? %>
+        <li><%= link_to "New Appt", new_appointment_path %></li>
+        <% end %>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <% if logged_in? %>
-              <l1><%= link_to "Sign Out", logout_path, method: :delete %></li>
-            <% else %>
-              <li><%= link_to "Sign In", login_path %></li>
-              <li><%= link_to "Sign Up", login_path %></li>
-            <% end %>
+          <l1><%= link_to "Sign Out", logout_path, method: :delete %></li>
+        <% else %>
+          <li><%= link_to "Sign In", login_path %></li>
+          <li><%= link_to "Sign Up", login_path %></li>
+        <% end %>
       </ul>
     </div>
   </div>

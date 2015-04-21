@@ -1,1 +1,26 @@
-<h1>a form will be here</h1>
+<!-- A form will be on this page for start time and end time
+	Subtract the end time from the start time to get the total amount of hours desired
+	Create a new row in the Appointments database for each hour
+	IE start time is 08:00 and end time is 17:00, so 9 hour work day, 9 rows in the db for that day
+-->
+
+
+
+<%= form_for @appointment do |f| %>
+	<p>
+		<%= f.label :date %>
+		<%= f.date_select :date %>
+	</p>
+
+	<p>
+		<%= f.label :start_time %>
+		<%= f.text_field :start_time %>
+	</p>
+
+	<p>
+		<%= f.label :end_time %>
+		<%= f.text_field :end_time %>
+	</p>
+
+	<p><%= f.submit %></p>
+<% end %>

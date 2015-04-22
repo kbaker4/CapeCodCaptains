@@ -11,15 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150408005652) do
+ActiveRecord::Schema.define(version: 20150422020401) do
 
   create_table "appointments", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "lesson_type"
-    t.date     "date"
-    t.string   "start_time"
-    t.string   "end_time"
+    t.date     "appt_date"
+    t.time     "start_time",  limit: 255
+    t.time     "end_time",    limit: 255
     t.boolean  "reserved"
     t.string   "name"
   end

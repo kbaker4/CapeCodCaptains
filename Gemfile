@@ -47,6 +47,7 @@ gem 'bcrypt'
 group :test, :development do 
 	gem "minitest"
 	gem "rspec-rails", "2.13.1"
+	gem 'pry'
 end
 
 group :test do

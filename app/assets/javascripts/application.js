@@ -16,5 +16,5 @@
 //= require_tree .
 
 $(function() {
-  $( "#datepicker" ).datepicker();
-  });
+  $( "#appointment_appt_date" ).datepicker();
+});

@@ -1,0 +1,9 @@
+<% @appointment.group_by(&:appt_date).each do |date, appt| %>
+	<tr> <td colspan="7"> <h1><%= date %></h1> </td> </tr>
+	<h3>Appointments:</h1>
+	<% appt.each do |appt|  %>
+		<tr>
+			<td>Time: <%= appt.start_time %> - <%= appt.end_time %></td>
+		</tr><br>
+	<% end  %>
+<% end %>

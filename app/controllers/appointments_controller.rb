@@ -1,5 +1,9 @@
 class AppointmentsController < ApplicationController
 
+	def index
+		@appointment = Appointment.all
+	end
+
 	def new
 		@appointment = Appointment.new
 	end
@@ -38,7 +42,7 @@ class AppointmentsController < ApplicationController
 
 		#Put a flash here for success message
 
-		redirect_to new_appointment_path
+		redirect_to appointments_path
 	end
 
 end

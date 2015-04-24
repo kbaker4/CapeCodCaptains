@@ -16,5 +16,7 @@
 //= require_tree .
 
 $(function() {
-  $( "#appointment_appt_date" ).datepicker();
+  $( "#appointment_appt_date" ).datepicker({
+  	dateFormat: 'dd-mm-yy'
+  });
 });

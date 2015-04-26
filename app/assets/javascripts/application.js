@@ -19,4 +19,4 @@ $(function() {
   $( "#appointment_appt_date" ).datepicker({
   	dateFormat: 'dd-mm-yy'
   });
-});
+});//= require fullcalendar_engine/application

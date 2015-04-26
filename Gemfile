@@ -44,6 +44,8 @@ gem 'friendly_id'
 
 gem 'bcrypt'
 
+gem 'simple_calendar'
+
 group :test, :development do 
 	gem "minitest"
 	gem "rspec-rails", "2.13.1"

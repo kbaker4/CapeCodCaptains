@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get '/prepurchase' => 'pages#prepurchase'
   get '/decommissioning' => 'pages#decommissioning'
   get '/recommissioning' => 'pages#recommissioning'
+  get '/about' => 'pages#about'
 end
 
 

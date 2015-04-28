@@ -14,9 +14,21 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require moment
+//= require fullcalendar
 
 $(function() {
   $( "#appointment_appt_date" ).datepicker({
   	dateFormat: 'dd-mm-yy'
   });
 });//= require fullcalendar_engine/application
+
+$(document).ready(function() {
+
+    // page is now ready, initialize the calendar...
+
+    $('#appointments').fullCalendar({
+        // put your options and callbacks here
+    })
+
+});

@@ -1,7 +1,8 @@
-<%= month_calendar do |date| %>
-	<%= date %>
-<% end %>
+<div id='calendar'></div>
 
+
+
+<!--
 <% @appointment.group_by(&:appt_date).each do |date, appt| %>
 	<tr> <td colspan="7"> <h1><%= date %></h1> </td> </tr>
 	<h3>Appointments:</h1>

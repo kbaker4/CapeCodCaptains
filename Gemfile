@@ -46,6 +46,10 @@ gem 'bcrypt'
 
 gem 'simple_calendar'
 
+gem 'fullcalendar-rails'
+
+gem 'momentjs-rails'
+
 group :test, :development do 
 	gem "minitest"
 	gem "rspec-rails", "2.13.1"

@@ -20,7 +20,7 @@ set :scm, :git
 set :branch, "master"
 
 # Use git repository
-set :repository, "https://github.com/kbaker4/CapeCodCaptain.git"
+set :repository, "https://github.com/kbaker4/CapeCodCaptains.git"
 
 # Checkout, compress and send a local copy
 set :deploy_via, :copy
@@ -28,6 +28,10 @@ set :deploy_to, "/home3/capecoh8/rails_apps/CapeCodCaptains"
 
 # We have all components of the app on the same server
 server domain, :app, :web, :db, :primary => true
+
+# define local/remote copy directories
+set :copy_dir, "/home3/capecoh8/tmp"
+set :remote_copy_dir, "/tmp"
 
 namespace :deploy do
   task :start do ; end
